@@ -16,7 +16,7 @@ struct HomeView: View {
             VStack {
                 Text("Home View")
                 Button {
-                    coordinator.push(.ProductDetail)
+                    coordinator.push(.ProductDetail(title: "Monitor", amount: 101))
                 } label: {
                     Text("Go To Product Detail")
                 }

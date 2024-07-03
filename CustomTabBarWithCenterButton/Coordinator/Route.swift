@@ -9,6 +9,6 @@ import Foundation
 
 enum Route: Hashable {
     //define here the diffent screens you will be navigating to
-    case ProductDetail
+    case ProductDetail(title: String, amount: Int)
     case AccountSettings
 }

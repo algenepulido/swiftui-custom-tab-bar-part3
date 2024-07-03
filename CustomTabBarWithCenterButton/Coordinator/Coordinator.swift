@@ -25,8 +25,8 @@ final class Coordinator: ObservableObject {
     @ViewBuilder
     func build(route: Route) -> some View {
         switch route {
-        case .ProductDetail:
-            ProductDetailView()
+        case .ProductDetail(let title, let amount):
+            ProductDetailView(title: title, amount: amount)
         case .AccountSettings:
             AccountSettingsView()
         }
